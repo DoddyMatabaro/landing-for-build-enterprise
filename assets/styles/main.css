@@ -6,19 +6,59 @@
     --margin:1rem;
 }
 
+*{
+   box-sizing: border-box; 
+}
+
+html{
+    height: 100%;
+}
 body{
-    margin: 10px 0;
+    height: 100%;
+    margin:0;
     padding: 0;
     text-align: center;
 }
 
 #container{
+    width: 100vw;
     display: grid;
-    grid-template-rows: "hero vision expertise devise projet articles contact";
+    grid-template-areas: "hero"
+                         "vision"
+                         "expertise"
+                         "devise"
+                         "projet"
+                        "articles"
+                         "contact";
 }
+header{
+    height:100vh;
+    grid-area: hero;
+}
+.hero-bg_image{
+    background-image: url("../images/backgrounds/hero.png");
+    height: 100%;
+    filter: blur(4px);
+    -webkit-filter: blur(3px);
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-0%, -100%);
+}
 #vision{
     grid-area: vision;
+    height:100vh;
 }
 
 #expertise{
