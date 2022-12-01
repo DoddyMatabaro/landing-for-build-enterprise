@@ -11,3 +11,33 @@ body{
     padding: 0;
     text-align: center;
 }
+
+#container{
+    display: grid;
+    grid-template-rows: "hero vision expertise devise projet articles contact";
+}
+
+#vision{
+    grid-area: vision;
+}
+
+#expertise{
+    grid-area: expertise;
+}
+
+#devise{
+    grid-area: devise;
+}
+
+#projet{
+    grid-area: projet;
+}
+
+#articles{
+    grid-area: articles;
+}
+
+#contact{
+    grid-area: contact;
+}
+
