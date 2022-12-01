@@ -1,0 +1,13 @@
+:root {
+    --main-bg-color: brown;
+    --secondary-bg-color: blue;
+    --btn-padding:1rem;
+    --sctn-padding:1rem;
+    --margin:1rem;
+}
+
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
