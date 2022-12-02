@@ -34,17 +34,35 @@ body{
 header{
     height:100vh;
     grid-area: hero;
+    margin-top: var(--margin);
 }
 .hero-bg_image{
     background-image: url("../images/backgrounds/hero.png");
     height: 100%;
-    filter: blur(4px);
-    -webkit-filter: blur(3px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: center;
-
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.text-logo>b{
+    font-weight: bold;
+    font-size: 30px;
+}
+.image-logo{
+    width: 4rem;
+}
+.text-logo{
+    display: flex;
+    flex-direction: column;
 }
 .hero{
     display: flex;
