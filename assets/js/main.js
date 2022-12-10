@@ -31,7 +31,7 @@ const onScroll = ()=> {
 const onResize = ()=>{
     element.style.width = 'auto';
     element.classList.remove('fixed');
-    fake.style.display = 'none';
+    fake.style.width = 'none';
     rect = element.getBoundingClientRect();
     top = rect.top + scrollY();
     fake.style.width = rect.width + 'px';
@@ -42,4 +42,19 @@ const onResize = ()=>{
 
     window.addEventListener('scroll', onScroll);
     // window.addEventListener('resize', onResize);
+    let slideIndex= 0;
+    
+    const carousel = ()=>{
+        let i;
+        let x=document.getElementsByClassName('projects-slides');
+        console.log(x);
+        for (i=0; i<x.length; i++) {   
+            x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "flex"; 
+        setTimeout(carousel, 2000); 
+    }
+    carousel();
 })()
