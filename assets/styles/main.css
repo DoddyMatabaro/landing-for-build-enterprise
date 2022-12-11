@@ -582,9 +582,12 @@ body{
 }
 
 .articles .link>span{
-    width: 0px;
-    display: none;
+   display: none;
 }
+.articles .link>i:hover .articles .link>span{
+    display: block;
+ }
+
 .contact{
     margin-top: 30px;
     flex: flex;
