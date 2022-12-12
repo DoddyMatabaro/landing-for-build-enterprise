@@ -715,7 +715,6 @@ body{
 }
 
 .etude:hover{
-    cursor: pointer;
     background-color: rgb(199, 55, 55);
 }
 .etude>img{
@@ -748,4 +747,37 @@ body{
 .etude:first-child:hover{
     background-color: rgb(119, 119, 119);
 
+}
+
+.visite{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 40px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.visite-links{
+    display: flex;
+    width: 100%;
+    flex: row;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.visite-link{
+    width: 40%;
+    text-decoration: none;
+    color: #000;
+}
+
+.visite-link:hover{
+    text-decoration: blue;
 }
