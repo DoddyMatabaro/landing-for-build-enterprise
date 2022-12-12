@@ -103,7 +103,6 @@ body{
     flex-direction: column;
     padding-top:6px;
     gap: 0.2rem;
-    
 }
 
 .menu{
@@ -208,7 +207,6 @@ body{
     align-self: center;
     color: #fff;
     text-shadow: 2px 2px 1px #000;
-
 }
 
 .call-action{
@@ -550,7 +548,7 @@ body{
     text-align: center;
 }
 
-.articles .categorie {
+ .categorie {
     width: 100%;
     list-style: none;
     display: flex;
@@ -562,12 +560,12 @@ body{
     font-weight: 300;
 }
 
-.articles .categorie>li{
+.categorie>li{
     background-color: #ececec;
     padding: 5px;
     border-radius: 0.5rem;
 }
-.articles .categorie>li:hover{
+.categorie>li:hover{
     background-color: #b4a9a9;
     cursor: pointer;
 }
@@ -600,6 +598,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     text-align: left;
+    margin: 0 2rem;
     padding: 1rem 6rem;
     line-height: 1.5;
     border-radius: 20px;
@@ -668,4 +667,85 @@ body{
 .contact-right>img{
     width: 100%;
     height: 100%;
+}
+
+.footer{
+    font: 23px bold;
+    margin-top: 40px;
+}
+
+/* PAGE SERVICES */
+
+.services-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+.services-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 35px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    margin-top: 0;
+}
+.services-description>p{
+    max-width: 60%;
+    margin-top: 0;
+}
+
+.services-bloc>div{
+    background-color: #d90505;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 33%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.etude:hover{
+    cursor: pointer;
+    background-color: rgb(199, 55, 55);
+}
+.etude>img{
+    width: 22rem;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.etude>b{
+    font-size: 26px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.etude>a{
+    color: #fff;
+}
+
+.etude:last-child{
+    background-color: #e08b6c;
+}
+.etude:last-child:hover{
+    background-color: #db9880;
+}
+
+.etude:first-child{
+    background-color: rgb(105, 103, 106);
+}
+
+.etude:first-child:hover{
+    background-color: rgb(119, 119, 119);
+
 }
