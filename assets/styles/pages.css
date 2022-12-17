@@ -411,7 +411,10 @@ body{
     color: #000;
     margin-bottom: 30px;
 }
-
+.visite h3{
+    font-weight: 400;
+    font-size: 40px;
+}
 .visite-links{
     display: flex;
     width: 100%;
@@ -462,6 +465,7 @@ body{
     text-align: left;
     display: flex;
     flex-direction: column;
+    color: #000;
     gap: 1rem;
 }
 .porfolio>article>img{
@@ -470,10 +474,55 @@ body{
     height: 27rem;
     object-fit:cover;
 }
+.porfolio>article>img:hover{
+    filter: contrast(0.6);
+    cursor: pointer;
+}
 .portfolio>article>ul{
     height: 30%;
 }
 
 .porfolio>article>a{
     text-decoration: none;
+    color: #000;
+}
+.porfolio>article>a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.arrow{
+    color: #0000ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* pagination */
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.pagination>a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: background-color .3s;
+}
+
+.pagination a.active{
+    background-color: #0000ff;
+    color: #FFF;
+}
+
+.pagination a:hover:not(.active){
+    background-color: #e08b6c;
 }
