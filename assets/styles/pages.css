@@ -526,3 +526,20 @@ body{
 .pagination a:hover:not(.active){
     background-color: #e08b6c;
 }
+
+
+/* about */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 26px;
+
+}
+
+.about-title{
+    align-self: center;
+}
