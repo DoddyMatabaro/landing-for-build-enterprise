@@ -542,4 +542,20 @@ body{
 
 .about-title{
     align-self: center;
+    font-weight: 400;
+}
+
+.about-description{
+    font-size: 22px;
+    word-spacing: 5px;
+}
+
+.about-description h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+.about-description p{
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 5px;
 }
